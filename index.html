@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Unidades</h1>
+
+    <div class="form-group">
+      <label for="tipo">Tipo de conversión:</label>
+      <select id="tipo" onchange="actualizarOpciones()">
+        <option value="temperatura">Temperatura</option>
+        <option value="distancia">Distancia</option>
+        <option value="peso">Peso</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="valor">Valor:</label>
+      <input type="number" id="valor" placeholder="Ingresa un número" />
+    </div>
+
+    <div class="form-group">
+      <label for="desde">De:</label>
+      <select id="desde"></select>
+    </div>
+
+    <div class="form-group">
+      <label for="hacia">A:</label>
+      <select id="hacia"></select>
+    </div>
+
+    <button onclick="convertir()">Convertir</button>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="temperatura.js"></script>
+  <script src="distancia-peso.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
