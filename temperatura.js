@@ -3,7 +3,7 @@ function convertirTemperatura(valor, desde, hacia) {
 
   const aCelsius = {
     celsius: v => v,
-    fahrenheit: v => (v - 32) * 5 / 9,
+    fahrenheit: v => (v - 32) * 5 / 9, // correccion hotfix: formula verificada
     kelvin: v => v - 273.15
   };
 
